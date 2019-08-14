@@ -166,3 +166,31 @@ NumPlus: for (v = 2; v <= 10; v++) {
     }
     alert (v);
 }
+
+//Напишите if..else, соответствующий следующему switch:
+switch (browser) {
+    case 'IE':
+      alert( 'О, да у вас IE!' );
+      break;
+  
+    case 'Chrome':
+    case 'Firefox':
+    case 'Safari':
+    case 'Opera':
+      alert( 'Да, и эти браузеры мы поддерживаем' );
+      break;
+  
+    default:
+      alert( 'Мы надеемся, что и в вашем браузере все ок!' );
+  }
+
+  //Ответ:
+  var browser = prompt('Какой у вас браузер?', '');
+  if (browser == 'IE' || browser == 'Internet Explorer') {
+      alert('О, да у вас IE!')
+  } else if (browser == 'Chrome' || browser == 'Firefox' || browser == 'Safari' || browser == 'Opera') {
+      alert ('Да и эти браузеры мы поддерживаем');
+  } else {
+      alert('Мы надеемся, что и в вашем браузере все ок!');
+  }
+
