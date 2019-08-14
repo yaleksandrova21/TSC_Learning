@@ -219,3 +219,28 @@ switch (a = +prompt('a?', '')) {
         alert ('2,3');
         break;
 }
+
+//Перепишите функцию, чтобы она делала то же самое, но без if, в одну строку. Сделайте два варианта функции checkAge:
+function checkAge(age) {
+    if (age > 18) {
+      return true;
+    } else {
+      return confirm('Родители разрешили?');
+    }
+  }
+//1. Используя оператор '?'
+function checkAge(age) {
+    return (age > 18) ? true: confirm('Родители разрешили?')}
+
+//2. Используя оператор ||
+function checkAge(age) {
+    return (age > 18) || confirm('Родители разрешили?')}
+
+//Функция min. Напишите функцию min(a,b), которая возвращает меньшее из чисел a,b
+function min(a,b) {
+    if (a < b) {
+        alert(a)
+    } else {
+        alert(b)
+    }
+}
