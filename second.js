@@ -66,3 +66,24 @@ function getDecimal(num) {
     return q.toFixed(2);
 }
 alert(getDecimal(-1.2));
+
+//Напишите функцию fibBinet(n), которая будет вычислять Fn по формуле Бине
+function fibB(n) {
+    var five = Math.sqrt(5);
+    var e = (1 + five)/2;
+    var g = Math.pow(e,n)/five;
+    if (n>1)
+    return Math.round(g);
+}
+fibB(77); //5527939700884771 != 5527939700884757 проблема в изъятии корня из 5
+
+//Напишите код для генерации случайного значения в диапазоне от 0 до max, не включая max.
+function randNum() {
+    var max = 100;
+    var y = Math.random()*max;
+    return y^0;
+}
+randNum();
+
+//Случайное из интервала (min, max)
+
