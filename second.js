@@ -86,4 +86,16 @@ function randNum() {
 randNum();
 
 //Случайное из интервала (min, max)
+var max = 100;
+var min = 30;
+RandNumber = min + Math.random()*(max - min);
+alert(RandNumber^0);
+
+//Напишите функцию randomInteger(min, max) для генерации случайного целого числа между min и max, включая min,max как возможные значения.
+//Любое число из интервала min..max должно иметь одинаковую вероятность.
+function randomInteger(min, max) {
+    var u = min + Math.random()*(max - min);
+    return u^0; //или return Math.round(u);
+}
+randomInteger(1, 5)
 
