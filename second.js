@@ -30,3 +30,20 @@ function SumThree (h) {
     return sum;
 }
 SumThree(100);
+
+// Вычислить факториал
+function factorial(n) {
+    if (n > 1)
+    return n * factorial(n-1);
+    return 1;
+}
+factorial(5);
+
+//Напишите функцию fib(n), которая возвращает n-е число Фибоначчи.
+function fib(n) {
+    if (n>1)
+    return fib(n-1) + fib(n - 2);
+    return n;
+}
+fib(7);
+
