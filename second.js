@@ -105,4 +105,8 @@ function ucFirst(str) {
 }
 ucFirst('андрей');
 
+//
+function checkSpam(str) {
+    return str.includes('viagra') || str.includes('xxx');
+}
 
