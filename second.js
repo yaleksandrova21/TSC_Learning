@@ -16,6 +16,17 @@ function SumTo(n) {
 SumTo(100);
 
 //(2) Через рекурсию, т.к. sumTo(n) = n + sumTo(n-1) для n > 1
-
+function SumTwo(m) {
+    if (m > 1) 
+    return m + SumTwo(m - 1);
+    return 1;
+}
+SumTwo(100);
 
 //(3) С использованием формулы для суммы арифметической прогрессии
+function SumThree (h) {
+    var sum = 0;
+    sum = (h * (h + 1))/2;
+    return sum;
+}
+SumThree(100);
