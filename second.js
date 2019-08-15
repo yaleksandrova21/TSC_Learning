@@ -99,3 +99,10 @@ function randomInteger(min, max) {
 }
 randomInteger(1, 5)
 
+//Сделать первый символ заглавным
+function ucFirst(str) {
+    return str[0].toUpperCase() +str.slice(1);
+}
+ucFirst('андрей');
+
+
