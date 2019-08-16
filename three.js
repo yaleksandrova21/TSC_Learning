@@ -89,7 +89,11 @@ menu = {
   width: 400,
   height: 600,
   title: "My menu"
-}; */
+}; 
+Для проверки на число используйте функцию:
+function isNumeric(n) {
+  return !isNaN(parseFloat(n)) && isFinite(n)
+}*/
 var menu = {
     width: 200,
     height: 300,
