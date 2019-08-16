@@ -105,7 +105,7 @@ function ucFirst(str) {
 }
 ucFirst('андрей');
 
-//
+//Напишите функцию checkSpam(str), которая возвращает true, если строка str содержит „viagra“ или „XXX“, а иначе false.
 function checkSpam(str) {
     return str.includes('viagra') || str.includes('xxx');
 }
