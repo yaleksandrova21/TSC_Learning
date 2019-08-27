@@ -51,3 +51,10 @@ function sum() {
     }
     return z;
 }
+
+//Вывести дату в формате дд.мм.гг
+function formatDate(d) {
+    var d = new Date (2014, 0, 30);
+    return d.getDate() + '.' + (d.getMonth()+1) + '.' + d.getFullYear();
+}
+formatDate();
