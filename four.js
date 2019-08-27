@@ -25,4 +25,14 @@ function getSum(arr) {
 }
 getSum([1,2,3,4,5])
 
-//
+//Проверка на аргумент-undefined
+//Как в функции отличить отсутствующий аргумент от undefined?
+function f(x) {
+    if (arguments.length > 0) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+f(undefined); // 1
+f(); // 0
