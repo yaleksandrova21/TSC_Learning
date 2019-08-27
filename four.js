@@ -77,3 +77,15 @@ function getLocalDay(date) {
 }
 var q = new Date();
 getLocalDay(q);
+
+//День недели в европейской нумерации. День нужно возвратить в европейской нумерации, т.е. понедельник имеет номер 1, вторник номер 2 и т.д.
+function getLocalDay(q) {
+    var day = q.getDay();
+    if (day == 0) {
+        return 7;
+    }
+    return day;
+}
+var q = new Date();
+getLocalDay(q);
+
