@@ -36,3 +36,18 @@ function f(x) {
 }
 f(undefined); // 1
 f(); // 0
+
+/* Напишите функцию sum(...), которая возвращает сумму всех своих аргументов:
+sum() = 0
+sum(1) = 1
+sum(1, 2) = 3
+sum(1, 2, 3) = 6
+sum(1, 2, 3, 4) = 10 */
+
+function sum() {
+    var z = 0;
+    for (i = 0; i < arguments.length; i++) {
+        z = z + arguments[i]
+    }
+    return z;
+}
