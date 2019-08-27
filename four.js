@@ -13,4 +13,16 @@ var arrLength = arr.map(function(item) {
 
 //Массив частичных сумм
 //вызов getSums(arr) должен возвращать новый массив из такого же числа элементов, в котором на каждой позиции должна быть сумма элементов arr до этой позиции включительно
+function getSum(arr) {
+	var result = [];
+	if (!arr.length) return result;
+	var sum = arr.reduce(function (num, n) {
+		result.push(num);
+		return num + n;
+	});
+	result.push(sum);
+	return result;
+}
+getSum([1,2,3,4,5])
 
+//
