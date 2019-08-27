@@ -89,3 +89,9 @@ function getLocalDay(q) {
 var q = new Date();
 getLocalDay(q);
 
+//Сколько секунд до завтра
+function getSecondsToTomorrow() {
+    var now = new Date();
+    var sec = 86400 - now.getSeconds() - (now.getMinutes()*60) - (now.getHours()*3600);
+    return sec;
+}
