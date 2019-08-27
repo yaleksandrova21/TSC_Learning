@@ -70,3 +70,10 @@ function getWeekDay (date) {
 }
 var q = new Date();
 getWeekDay (q);
+
+//День недели в европейской нумерации. День нужно возвратить в европейской нумерации, т.е. понедельник имеет номер 1, вторник номер 2 и т.д.
+function getLocalDay(date) {
+    return date.getDay();
+}
+var q = new Date();
+getLocalDay(q);
