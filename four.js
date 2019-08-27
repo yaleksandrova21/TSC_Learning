@@ -58,3 +58,15 @@ function formatDate(d) {
     return d.getDate() + '.' + (d.getMonth()+1) + '.' + d.getFullYear();
 }
 formatDate();
+
+//Создайте объект Date для даты: 20 февраля 2012 года, 3 часа 12 минут и вывести на экран
+var date = new Date (2012, 1, 20, 3, 12);
+alert(date);
+
+//Создайте функцию которая выводит текущий день недели в коротком формате "пн", "вт" и т.д.
+function getWeekDay (date) {
+    var weekDay = ["0", "пн", "вт", "ср", "чт", "пт", "сб", "вс"];
+    return weekDay[date.getDay()];
+}
+var q = new Date();
+getWeekDay (q);
