@@ -28,3 +28,14 @@ function printNumbers(a, b) {
         a++;
     }, 1000);
 }
+
+// 2. Используя рекурсивный setTimeout.
+function printNumbers(a, b) {
+    setTimeout(function start(){
+        alert (a);
+        if (a < b) {
+            setTimeout(start, 1000);
+        }
+        a++;
+    }, 1000);
+}
