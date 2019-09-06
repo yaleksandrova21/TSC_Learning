@@ -15,3 +15,16 @@ function sum(a) {
     };
     return f;
   }
+
+//Напишите функцию printNumbers(from, to), которая выводит число каждую секунду, начиная от from и заканчивая to.
+//Сделайте два варианта решения.
+// 1. Используя setInterval.
+function printNumbers(a, b) {
+    var timerId = setInterval(function() {
+        alert(a);
+        if (a == b) {
+            clearInterval(timerId);
+        }
+        a++;
+    }, 1000);
+}
