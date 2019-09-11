@@ -26,3 +26,23 @@ meetup.self = meetup;
 alert( JSON.stringify(meetup, function replacer(key, value) {
     return (key != "" && value == meetup) ? undefined : value;
 }));
+
+//Работа с прототипами
+//Какие значения показываются в процессе выполнения кода?
+let animal = {
+    jumps: null
+  };
+  let rabbit = {
+    __proto__: animal,
+    jumps: true
+  };
+
+  alert( rabbit.jumps ); // ? (1) true
+  
+  delete rabbit.jumps;
+  
+  alert( rabbit.jumps ); // ? (2) null
+  
+  delete animal.jumps;
+  
+  alert( rabbit.jumps ); // ? (3) undefined
