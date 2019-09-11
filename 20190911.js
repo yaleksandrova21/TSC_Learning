@@ -73,3 +73,16 @@ let pockets = {
 pockets.__proto__ = bed;
 bed.__proto__ = table;
 table.__proto__ = head;
+
+//Куда будет произведена запись? Какой объект получит свойство full при вызове rabbit.eat(): animal или rabbit?
+let animal = {
+    eat() {
+      this.full = true;
+    }
+  };
+  
+  let rabbit = {
+    __proto__: animal
+  };
+  
+  rabbit.eat(); //rabbit = this
